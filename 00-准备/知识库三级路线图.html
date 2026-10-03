@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识库三级路线图 · 个人 → 部门 → 企业</title>
+<style>
+  :root{--bg:#0d1117;--card:#1c2230;--card2:#212a3a;--line:#2a3341;--tx:#e6edf3;--tx2:#9aa7b8;--tx3:#6e7d90;
+  --accent:#6366f1;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--cyan:#06b6d4;--purple:#a855f7;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;padding:32px 20px 70px}
+  .wrap{max-width:980px;margin:0 auto}
+  header{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:28px}
+  .kicker{color:var(--accent);font-size:12.5px;letter-spacing:.15em;font-weight:700}
+  h1{font-size:30px;font-weight:800;margin:8px 0 12px;letter-spacing:-.4px}
+  .lead{color:var(--tx2);font-size:15px}
+  .lead b{color:var(--tx)}
+  h2{font-size:19.5px;font-weight:780;margin:38px 0 12px;padding-top:20px;border-top:1px solid var(--line)}
+  h2:first-of-type{border-top:0;padding-top:0}
+  h3{font-size:16px;font-weight:730;margin:22px 0 9px}
+  p{font-size:14.4px;color:var(--tx2);margin-bottom:11px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px 19px;margin-bottom:13px}
+  .lv1{border-left:3px solid var(--cyan)} .lv2{border-left:3px solid var(--amber)} .lv3{border-left:3px solid var(--purple)}
+  table{width:100%;border-collapse:collapse;margin:12px 0 8px;font-size:13.3px}
+  th,td{padding:9px 11px;border:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.6}
+  th{background:var(--card2);color:var(--tx);font-weight:700;font-size:12.7px}
+  td{color:var(--tx2)} td.h{color:var(--tx);font-weight:650}
+  ul,ol{margin:7px 0 12px 21px;font-size:14.2px;color:var(--tx2)} li{margin-bottom:7px} li b{color:var(--tx)}
+  .tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:20px;border:1px solid}
+  .tc{background:rgba(6,182,212,.13);color:#67e8f9;border-color:rgba(6,182,212,.32)}
+  .ta{background:rgba(245,158,11,.13);color:#fcd34d;border-color:rgba(245,158,11,.32)}
+  .tp{background:rgba(168,85,247,.14);color:#d8b4fe;border-color:rgba(168,85,247,.32)}
+  .key{background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.32);border-radius:11px;padding:15px 18px;margin:16px 0}
+  .key b{color:#a5b4fc}
+  .warn{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);border-radius:11px;padding:14px 17px;margin:16px 0}
+  .warn b{color:#fcd34d}
+  .ok{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.28);border-radius:11px;padding:14px 17px;margin:16px 0}
+  .ok b{color:#86efac}
+  code{background:#0b0f16;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12.8px;color:#c7d2fe;font-family:ui-monospace,Consolas,monospace}
+  .step{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:9px;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.35);color:#a5b4fc;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+  .step .bd{flex:1} .step .bd b{display:block;color:var(--tx);font-size:14.8px;margin-bottom:3px}
+  footer{margin-top:46px;padding-top:17px;border-top:1px solid var(--line);color:var(--tx3);font-size:12.4px}
+  @media(max-width:700px){body{padding:18px 12px 40px}h1{font-size:22px}table{font-size:12.4px}th,td{padding:7px 8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">ULTIMATE GOAL · 2026-10-03 确认</div>
+  <h1>打造专属 AI：个人知识库 → 部门知识库 → 企业知识库</h1>
+  <p class="lead">终极目标一句话：<b>把部门所有资料与流程存进知识库，问 AI 时能随时调用，并依据专业知识给出可靠建议。</b><br>这份文件把这条目标锚成三级阶梯——每一级该做成什么样、用什么工具、多久能见效、最容易死在哪。</p>
+</header>
+
+<div class="key">
+  <b>先确认一件事：这个目标和 90 天课表不冲突，课表就是它的执行路径。</b>
+  <table style="margin-top:11px;margin-bottom:0">
+    <tr><th style="width:26%">你想做的事</th><th style="width:24%">技术名词</th><th>课表对应周次</th></tr>
+    <tr><td class="h">资料存进知识库</td><td>RAG · 向量数据库</td><td>W7–W8</td></tr>
+    <tr><td class="h">按流程干活、查系统</td><td>Agent · 工具调用 · MCP</td><td>W9</td></tr>
+    <tr><td class="h">给的建议要可靠</td><td>Evals · 黄金数据集</td><td>W10（最关键的一周）</td></tr>
+    <tr><td class="h">别人也能用起来</td><td>部署 · 权限 · 可观测性</td><td>W11–W12</td></tr>
+    <tr><td class="h">决定哪些资料值得进库</td><td>流程审计 · Discovery</td><td>W1–W2（<b>你现在在这里</b>）</td></tr>
+  </table>
+  <p style="margin-top:10px;margin-bottom:0">所以主线项目不用改，只是把它的名字说得更准确：<b>「养护知识库 + 专属 AI 助手」</b>。</p>
+</div>
+
+<h2>三级阶梯</h2>
+
+<div class="card lv1">
+  <h3 style="margin-top:0">第一级 · 个人知识库 <span class="tag tc">2–4 周见效</span></h3>
+  <p><b>目标：</b>把你自己手上的资料建成库，先服务于你自己——写月报、查规范、判断病害处置方式。</p>
+  <table>
+    <tr><th style="width:18%">维度</th><th>说明</th></tr>
+    <tr><td class="h">装什么</td><td>公路养护技术规范、桥涵养护规范、本单位作业指导书、历史巡查记录、历史工单、月报模板、你自己的笔记</td></tr>
+    <tr><td class="h">用什么</td><td>先用<b>现成工具</b>，不写代码：Dify（可私有化）/ Coze / RAGFlow（对中文 PDF 和表格解析强，适合规范类文档）/ AnythingLLM（纯本地）。<b>先挑一个装上，别选型选一周。</b></td></tr>
+    <tr><td class="h">验收标准</td><td>你提 20 个真实养护问题，≥15 个答案有正确出处；出处点击能跳回原文；答不出时它说"没找到依据"而不是编</td></tr>
+    <tr><td class="h">这一步的价值</td><td><b>跑通全流程、攒出黄金数据集</b>。这一级做出来，你就已经懂得别人做不出来的东西了</td></tr>
+  </table>
+</div>
+
+<div class="card lv2">
+  <h3 style="margin-top:0">第二级 · 部门知识库 <span class="tag ta">2–3 个月</span></h3>
+  <p><b>目标：</b>同事也能用、也能传资料。难点从技术转向了<b>人和管理</b>。</p>
+  <table>
+    <tr><th style="width:18%">维度</th><th>说明</th></tr>
+    <tr><td class="h">多出来的要求</td><td>多人上传入口、按岗位分权限、引用溯源必须可信、版本更新机制、采纳率追踪</td></tr>
+    <tr><td class="h">真正的难点</td><td><b>不是技术，是"资料治理"</b>：谁负责更新？过期文件怎么下线？重复的版本留哪个？扫描件要不要 OCR？——这三项不定清楚，半年后就变成垃圾场</td></tr>
+    <tr><td class="h">验收标准</td><td>部门 3 个人以上每周真的在用；有人主动往里传资料；新来的同事靠它答对岗位常识问题</td></tr>
+    <tr><td class="h">关键指标</td><td><b>采纳率</b>（有人用）远比<b>准确率</b>（测出来好看）重要。麻省理工的研究说 95% 的 genAI 项目没带来回报，绝大多数死在"做出来了没人用"</td></tr>
+  </table>
+</div>
+
+<div class="card lv3">
+  <h3 style="margin-top:0">第三级 · 企业知识库 <span class="tag tp">半年以上，且需要团队</span></h3>
+  <p><b>目标：</b>跨部门、可审计、可合规、能对接业务系统。</p>
+  <table>
+    <tr><th style="width:18%">维度</th><th>说明</th></tr>
+    <tr><td class="h">多出来的要求</td><td>私有化部署（内网）、单点登录、审计日志、数据分级分级管控、灾备、对接 OA/工单/ERP、SLA</td></tr>
+    <tr><td class="h">诚实提醒</td><td><b>这一级不是你现在能做的</b>，它需要正经的工程团队（后端、运维、安全）。但也不需要你现在做——三级是递进的，第一级跑通了，你才有资格和底气去谈第二级、第三级</td></tr>
+    <tr><td class="h">你的角色</td><td>在这里你不是写代码的人，而是<b>最懂业务和资料的人（Echo）</b>——决定库里装什么、怎么问才问得对、答案对不对。这个角色稀缺且不可替代</td></tr>
+  </table>
+</div>
+
+<h2>五个最容易翻车的点</h2>
+<div class="card">
+  <div class="step"><div class="n">1</div><div class="bd"><b>80% 的工作量在整理资料，不在 AI</b><p style="margin-bottom:0">扫描版规范要先 OCR；表格多的文档解析容易串；同一份文件三个版本要定哪个有效。这部分枯燥但决定成败——<b>也正是你比程序员占便宜的地方</b>：你知道哪份文件才算数。</p></div></div>
+  <div class="step"><div class="n">2</div><div class="bd"><b>权限与合规，动手前先问清楚</b><p style="margin-bottom:0">养护资料能不能传到公有云？单位对数据外发有没有规定？<b>在建库之前先问一句</b>，免得做完了不能用。有顾虑就走本地/私有化路线。</p></div></div>
+  <div class="step"><div class="n">3</div><div class="bd"><b>知识库会腐烂</b><p style="margin-bottom:0">大家传完一轮就再也不更新，半年后全是过期答案，然后没人信它。预防办法：指定 Owner、文件标注有效期、定期清理。<b>这是管理问题，不是技术问题。</b></p></div></div>
+  <div class="step"><div class="n">4</div><div class="bd"><b>RAG 减少幻觉，但不根除</b><p style="margin-bottom:0">必须硬约束：<b>答案必须带出处</b>，没有出处就回答"未找到依据"。涉及等级判定、金额、安全的，一律转人工。</p></div></div>
+  <div class="step"><div class="n">5</div><div class="bd"><b>别一上来碰代码框架</b><p style="margin-bottom:0">LangChain、LlamaIndex 这些留到 W7–W8。<b>现在先用开箱工具把库建起来看见效果</b>，效果验证过了再决定要不要自己写代码。顺序反了会直接卡死在第 3 天。</p></div></div>
+</div>
+
+<h2>今天可以做的一件事：列资料清单</h2>
+<div class="card">
+  <p>不要挑工具、不要装软件。<b>先把"库里要装什么"列清楚</b>——这张表就是知识库的地基，也是课表 D5「数据盘点」的产出。直接照下面的格式口述给我，我帮你整理成文件并提交。</p>
+  <table>
+    <tr><th style="width:20%">资料</th><th style="width:14%">格式</th><th style="width:12%">大概数量</th><th style="width:14%">谁管</th><th>敏感吗 / 备注</th></tr>
+    <tr><td class="h">例：公路养护技术规范</td><td>PDF（扫描）</td><td>1 本</td><td>所里资料柜</td><td>公开出版物，可外传</td></tr>
+    <tr><td class="h">例：日常巡查记录本</td><td>手写本 / 照片</td><td>每天 1 次</td><td>我</td><td>含桩号，脱敏后再用</td></tr>
+    <tr><td class="h"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="h"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="h"></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <p style="margin-bottom:0"><b>先列 5 份就够。</b>想到什么写什么，格式乱没关系——整理是我的事。</p>
+</div>
+
+<div class="ok">
+  <b>为什么这件事你现在做最合适：</b>工具越来越便宜、模型越来越强，真正稀缺的是"知道该往库里装什么、怎么问才问得对、答案对不对"——这三件事只有在一线待过的人能判断。<br>
+  <b style="color:#86efac">而这三件事，恰恰就是将来你在 20 条黄金数据集里要手写标注的东西，也是别人抄不走的资产。</b>
+</div>
+
+<footer>路线图生成于 2026-10-03 · 配套《FDE 90 天课表》《AI 名词白话手册》· 工具选型以官网实测为准</footer>
+
+</div>
+</body>
+</html>
