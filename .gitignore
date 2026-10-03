@@ -1,0 +1,44 @@
+# 环境与依赖
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+node_modules/
+
+# 密钥与配置（重要：绝不上传）
+.env
+.env.*
+*.key
+*.pem
+config.local.*
+secrets.*
+
+# 真实业务数据（脱敏前不上传）
+*.xlsx
+*.xls
+*.csv
+*.db
+*.sqlite
+data/raw/
+data/private/
+
+# 大文件
+*.mp4
+*.mov
+*.zip
+*.rar
+*.7z
+*.pdf
+!docs/*.pdf
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# 日志
+*.log
+logs/
